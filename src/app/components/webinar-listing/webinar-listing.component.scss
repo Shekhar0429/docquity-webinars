@@ -1,0 +1,59 @@
+.listing-container {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.custom-tab {
+  border: none;
+  border-bottom: 3px solid transparent;
+  background: none;
+  padding: 12px 24px;
+  font-weight: 500;
+  color: #6c757d;
+  transition: all 0.3s;
+}
+
+.custom-tab:hover {
+  color: #007bff;
+}
+
+.no-records {
+  width: 100%;
+  text-align: center;
+}
+
+.custom-tab.active {
+  color: #007bff;
+  border-bottom-color: #007bff;
+}
+
+.sidebar-sticky {
+  position: sticky;
+  top: 80px;
+}
+
+.view-all {
+  border: 1px solid #1d1919 !important;
+  color: #1d1919 !important;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.badge {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.badge:hover {
+  background-color: #e9ecef !important;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    margin-top: 2rem;
+  }
+}

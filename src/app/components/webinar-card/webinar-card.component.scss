@@ -1,0 +1,42 @@
+.webinar-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.webinar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #212529;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.badge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.btn-link {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-link:hover {
+  color: #007bff !important;
+}

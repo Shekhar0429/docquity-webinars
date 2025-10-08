@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Button Styles */
+.btn {
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Card Styles */
+.card {
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 0 12px;
+  }
+  
+  h4 {
+    font-size: 1.25rem;
+  }
+}

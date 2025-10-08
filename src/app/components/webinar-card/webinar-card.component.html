@@ -1,0 +1,75 @@
+<div class="webinar-card card border-0 shadow-sm h-100">
+  <!-- Thumbnail -->
+  <div class="position-relative">
+    <img [src]="webinar.thumbnail" 
+         class="card-img-top" 
+         [alt]="webinar.title"
+    />
+    <!-- Live Badge -->
+    <span *ngIf="webinar.type === 'LIVE'" 
+          class="badge bg-danger position-absolute top-0 start-0 m-2">
+      LIVE
+    </span>
+    <!-- Category Badge -->
+    <span class="badge bg-warning text-dark position-absolute bottom-0 start-0 m-2">
+      {{ webinar.category }}
+    </span>
+    <!-- Duration -->
+    <span class="badge bg-dark position-absolute bottom-0 end-0 m-2">
+      {{ webinar.duration }}
+    </span>
+  </div>
+
+  <div class="card-body">
+    <!-- Title -->
+    <h5 class="card-title mb-3">{{ webinar.title }}</h5>
+
+    <!-- Speaker Info -->
+    <div class="d-flex align-items-center mb-3">
+      <img [src]="webinar.speaker.image" 
+           class="rounded-circle me-2" 
+           width="40" 
+           height="40"
+           [alt]="webinar.speaker.name"
+      />
+      <div class="flex-grow-1">
+        <div class="d-flex align-items-center">
+          <h6 class="mb-0 me-1">{{ webinar.speaker.name }}</h6>
+          <i *ngIf="webinar.speaker.verified" class="verify-badge text-primary"></i>
+        </div>
+        <small class="text-muted">{{ webinar.speaker.specialty }}</small>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="d-flex justify-content-between text-muted small mb-3">
+      <span>
+        <i class="icon-calendar me-1"></i>
+        {{ webinar.date }}
+      </span>
+      <span>
+        <i class="icon-users me-1"></i>
+        {{ webinar.attendees }} attending
+      </span>
+    </div>
+
+    <!-- Actions -->
+    <div class="d-flex justify-content-between align-items-center border-top pt-3">
+      <div class="d-flex gap-3">
+        <button class="btn btn-sm btn-link text-muted p-0">
+          <i class="icon-like me-1"></i>
+          {{ webinar.likes }}
+        </button>
+        <button class="btn btn-sm btn-link text-muted p-0">
+          <i class="icon-comment me-1"></i>
+          {{ webinar.comments }}
+        </button>
+        <button class="btn btn-sm btn-link text-muted p-0">
+          <i class="icon-share me-1"></i>
+          {{ webinar.shares }}
+        </button>
+      </div>
+      <button class="btn btn-dark btn-sm">Watch Now</button>
+    </div>
+  </div>
+</div>

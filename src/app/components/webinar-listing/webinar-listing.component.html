@@ -1,0 +1,103 @@
+<div class="listing-container">
+  <div class="container-fluid py-4">
+    <div class="row">
+      <!-- Main Content -->
+      <div class="col-lg-9">
+        <!-- Section Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h4 class="fw-bold mb-0">Live webinars</h4>
+          <a href="#" class="view-all text-primary text-decoration-none">View all</a>
+        </div>
+
+        <!-- Webinar Grid -->
+        <div class="row g-4 mb-5">
+          <ng-container *ngIf="getFilteredWebinars('LIVE').length; else noResults;">
+            <div class="col-md-6 col-lg-4" *ngFor="let webinar of getFilteredWebinars('LIVE')">
+              <app-webinar-card [webinar]="webinar"></app-webinar-card>
+            </div>
+          </ng-container>
+          <ng-template #noResults>
+            <div class="no-records">
+              No Results Found
+            </div>
+          </ng-template>
+
+        </div>
+
+        <!-- Upcoming -->
+        <div>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="fw-bold mb-0"> Upcoming Webinars</h4>
+            <a href="#" class="view-all text-primary text-decoration-none">View all</a>
+          </div>
+
+          <div class="row g-4 mb-5">
+            <div class="col-md-6 col-lg-4" *ngFor="let webinar of getFilteredWebinars('UPCOMING')">
+              <app-webinar-card [webinar]="webinar"></app-webinar-card>
+            </div>
+          </div>
+        </div>
+
+        <!-- Continue Watching Section -->
+        <div class="mt-5">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="fw-bold mb-0">Continue watching</h4>
+            <a href="#" class="view-all text-primary text-decoration-none">View all</a>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4" *ngFor="let webinar of getFilteredWebinars('LIVE').slice(0, 3)">
+              <app-webinar-card [webinar]="webinar"></app-webinar-card>
+            </div>
+          </div>
+        </div>
+
+        <!-- Browse by Topic -->
+        <div class="mt-5">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="fw-bold mb-0">Browse by topic</h4>
+            <a href="#" class="view-all text-primary text-decoration-none">View all</a>
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <span *ngFor="let category of categories" class="badge bg-light text-dark border px-3 py-2">
+              {{ category }}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-3">
+        <div class="sidebar-sticky">
+          <!-- Top Speakers -->
+          <div class="card border-0 shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-3">Top speakers</h5>
+              <div class="speaker-list">
+                <div *ngFor="let speaker of topSpeakers" class="d-flex align-items-center mb-3">
+                  <img [src]="speaker.image" class="rounded-circle me-3" width="50" height="50" [alt]="speaker.name" />
+                  <div class="flex-grow-1">
+                    <h6 class="mb-0">{{ speaker.name }}</h6>
+                    <small class="text-muted">{{ speaker.specialty }}</small>
+                  </div>
+                  <button class="btn-sm btn-outline-primary">View profile</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Webinars You May Like -->
+          <div class="card border-0 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-3">Webinars you may like</h5>
+              <div *ngFor="let webinar of getFilteredWebinars('LIVE').slice(0, 2)" class="mb-3">
+                <img [src]="webinar.thumbnail" class="img-fluid rounded mb-2" [alt]="webinar.title" />
+                <h6 class="small">{{ webinar.title }}</h6>
+                <small class="text-muted">{{ webinar.speaker.name }}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Controversies in Upper GI Surgery - Advanced laparoscopic procedures",
+    "category": "CLINICAL CASE STUDY",
+    "type": "LIVE",
+    "thumbnail": "/assets/webinar/webinar_card_1.png",
+    "speaker": {
+      "name": "Dr. Vikram Sharma",
+      "specialty": "Surgical Gastroenterology",
+      "image": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=100",
+      "verified": true
+    },
+    "date": "Today, 6:00 PM",
+    "duration": "45 mins",
+    "attendees": 234,
+    "cmeCourses": 2,
+    "likes": 45,
+    "comments": 12,
+    "shares": 8
+  },
+  {
+    "id": 2,
+    "title": "Revolutionary Imaging Techniques in Orthopaedic Surgery",
+    "category": "CLINICAL UPDATES",
+    "type": "LIVE",
+    "thumbnail": "assets/webinar/Group 1171284217.png",
+    "speaker": {
+      "name": "Dr. Anita Mehta",
+      "specialty": "Orthopaedic Surgery",
+      "image": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=100",
+      "verified": true
+    },
+    "date": "Tomorrow, 7:00 PM",
+    "duration": "60 mins",
+    "attendees": 189,
+    "cmeCourses": 3,
+    "likes": 67,
+    "comments": 23,
+    "shares": 15
+  },
+  {
+    "id": 3,
+    "title": "Virus is like any other respiratory virus that causes common",
+    "category": "CLINICAL UPDATES",
+    "type": "LIVE",
+    "thumbnail": "/assets/webinar/live.png",
+    "speaker": {
+      "name": "Dr. Anita Mehta",
+      "specialty": "Orthopaedic Surgery",
+      "image": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=100",
+      "verified": true
+    },
+    "date": "Tomorrow, 7:00 PM",
+    "duration": "60 mins",
+    "attendees": 189,
+    "cmeCourses": 3,
+    "likes": 67,
+    "comments": 23,
+    "shares": 15
+  },
+  {
+    "id": 4,
+    "title": "The Covid19 Management of Parox Health caretine",
+    "category": "CLINICAL UPDATES",
+    "type": "UPCOMING",
+    "thumbnail": "/assets/webinar/Frame 1261159697.png",
+    "speaker": {
+      "name": "Dr. Anita Mehta",
+      "specialty": "Orthopaedic Surgery",
+      "image": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=100",
+      "verified": true
+    },
+    "date": "Tomorrow, 7:00 PM",
+    "duration": "60 mins",
+    "attendees": 189,
+    "cmeCourses": 3,
+    "likes": 67,
+    "comments": 23,
+    "shares": 15
+  },
+  {
+    "id": 5,
+    "title": "Perspectives in The Covid19 Management of Parox Health",
+    "category": "CLINICAL UPDATES",
+    "type": "UPCOMING",
+    "thumbnail": "/assets/webinar/Group 1171283755.png",
+    "speaker": {
+      "name": "Dr. Anita Mehta",
+      "specialty": "Orthopaedic Surgery",
+      "image": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=100",
+      "verified": true
+    },
+    "date": "Tomorrow, 7:00 PM",
+    "duration": "60 mins",
+    "attendees": 189,
+    "cmeCourses": 3,
+    "likes": 67,
+    "comments": 23,
+    "shares": 15
+  },
+  {
+    "id": 6,
+    "title": "The Covid19 Management of Parox Health caretine",
+    "category": "CLINICAL UPDATES",
+    "type": "UPCOMING",
+    "thumbnail": "/assets/webinar/image.png",
+    "speaker": {
+      "name": "Dr. Anita Mehta",
+      "specialty": "Orthopaedic Surgery",
+      "image": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=100",
+      "verified": true
+    },
+    "date": "Tomorrow, 7:00 PM",
+    "duration": "60 mins",
+    "attendees": 189,
+    "cmeCourses": 3,
+    "likes": 67,
+    "comments": 23,
+    "shares": 15
+  }
+]
