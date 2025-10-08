@@ -43,9 +43,4 @@ A responsive Angular application that displays a list of webinars (from a design
 - **Build / Tooling**: Angular CLI  
 - **Deployment**: Netlify  
 
----
-
-## Project Structure
-
-Here’s a simplified view of the folder layout:
 
