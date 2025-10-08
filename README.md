@@ -1,28 +1,51 @@
-# DocquityListing
+# Docquity Webinars Listing
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.18.
+A responsive Angular application that displays a list of webinars (from a design spec) in a pixel-perfect layout, built as part of the Docquity assignment.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Demo & Source
 
-## Code scaffolding
+- **Live Demo**: https://docquity-webinars.netlify.app  
+- **GitHub Repo**: https://github.com/Shekhar0429/docquity-webinars
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Table of Contents
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. [Features](#features)  
+2. [Tech Stack](#tech-stack)  
+3. [Project Structure](#project-structure)  
+4. [Setup & Run Locally](#setup--run-locally)  
+5. [Deployment](#deployment)  
+6. [Screenshots / Preview](#screenshots--preview)  
+7. [Future Improvements](#future-improvements)  
+8. [Author](#author)
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Features
 
-## Running end-to-end tests
+- Responsive design (desktop + mobile)  
+- Pixel-perfect matching to Figma spec  
+- Reusable Angular component(s) for webinar listing  
+- Clean, modular CSS (Bootstrap + custom)  
+- Handles images, icons, and assets as per design  
+- Well-structured code for maintainability  
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## Tech Stack
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-"# docquity-webinars" 
+- **Framework**: Angular (version 12.2.18)  
+- **Styling**: Bootstrap + SCSS / custom CSS  
+- **Testing**: Karma + Jasmine  
+- **Build / Tooling**: Angular CLI  
+- **Deployment**: Netlify  
+
+---
+
+## Project Structure
+
+Here’s a simplified view of the folder layout:
+
